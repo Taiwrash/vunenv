@@ -1,0 +1,3645 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #333; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        th { background-color: #f4f4f4; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+    </style>
+</head>
+<body>
+    <h1>Code Environment Variables Vulnerability Scan Report</h1>
+    <p>Generated at: 2025-01-08 00:28:29</p>
+    <table>
+        <thead>
+            <tr>
+                <th>File</th>
+                <th>Line</th>
+                <th>Code</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/.vite/deps/@remix-run_react.js</td>
+                <td>8442</td>
+                <td><pre>origin ?? (origin = process.env.REMIX_DEV_ORIGIN);</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/code-frame/lib/index.js</td>
+                <td>10</td>
+                <td><pre>return (typeof process === &#34;object&#34; &amp;&amp; (process.env.FORCE_COLOR === &#34;0&#34; || process.env.FORCE_COLOR === &#34;false&#34;) ? false : picocolors.isColorSupported</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/core/lib/config/files/configuration.js</td>
+                <td>238</td>
+                <td><pre>const targetPath = process.env.BABEL_SHOW_CONFIG_FOR;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/core/lib/config/files/configuration.js</td>
+                <td>265</td>
+                <td><pre>var env = api.cache(() =&gt; process.env.NODE_ENV);</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/core/lib/config/files/configuration.js</td>
+                <td>269</td>
+                <td><pre>var isProd = api.cache(() =&gt; process.env.NODE_ENV === &#34;production&#34;);</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/core/lib/config/files/configuration.js</td>
+                <td>274</td>
+                <td><pre>var isProd = api.cache.invalidate(() =&gt; process.env.NODE_ENV === &#34;production&#34;);</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/core/lib/config/helpers/environment.js</td>
+                <td>8</td>
+                <td><pre>return process.env.BABEL_ENV || process.env.NODE_ENV || defaultValue;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/core/node_modules/semver/semver.js</td>
+                <td>7</td>
+                <td><pre>process.env.NODE_DEBUG &amp;&amp;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/core/node_modules/semver/semver.js</td>
+                <td>8</td>
+                <td><pre>/\bsemver\b/i.test(process.env.NODE_DEBUG)) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/helper-compilation-targets/lib/index.js</td>
+                <td>172</td>
+                <td><pre>browsers = process.env.BROWSERSLIST;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/helper-compilation-targets/lib/index.js</td>
+                <td>174</td>
+                <td><pre>const configFile = options.configFile || process.env.BROWSERSLIST_CONFIG || _browserslist.findConfigFile(configPath);</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/helper-compilation-targets/node_modules/semver/semver.js</td>
+                <td>7</td>
+                <td><pre>process.env.NODE_DEBUG &amp;&amp;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/helper-compilation-targets/node_modules/semver/semver.js</td>
+                <td>8</td>
+                <td><pre>/\bsemver\b/i.test(process.env.NODE_DEBUG)) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/helper-create-class-features-plugin/node_modules/semver/semver.js</td>
+                <td>7</td>
+                <td><pre>process.env.NODE_DEBUG &amp;&amp;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/helper-create-class-features-plugin/node_modules/semver/semver.js</td>
+                <td>8</td>
+                <td><pre>/\bsemver\b/i.test(process.env.NODE_DEBUG)) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/core.js</td>
+                <td>18</td>
+                <td><pre>default: !process.env.BABEL_TYPES_8_BREAKING ? [] : undefined</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/core.js</td>
+                <td>27</td>
+                <td><pre>validate: !process.env.BABEL_TYPES_8_BREAKING ? (0, _utils.assertValueType)(&#34;string&#34;) : Object.assign(function () {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/core.js</td>
+                <td>39</td>
+                <td><pre>validate: !process.env.BABEL_TYPES_8_BREAKING ? (0, _utils.assertNodeType)(&#34;LVal&#34;, &#34;OptionalMemberExpression&#34;) : (0, _utils.assertNodeType)(&#34;Identifier&#34;, &#34;MemberExpression&#34;, &#34;OptionalMemberExpression&#34;, &#34;ArrayPattern&#34;, &#34;ObjectPattern&#34;, &#34;TSAsExpression&#34;, &#34;TSSatisfiesExpression&#34;, &#34;TSTypeAssertion&#34;, &#34;TSNonNullExpression&#34;)</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/core.js</td>
+                <td>130</td>
+                <td><pre>}, !process.env.BABEL_TYPES_8_BREAKING ? {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/core.js</td>
+                <td>220</td>
+                <td><pre>validate: !process.env.BABEL_TYPES_8_BREAKING ? Object.assign(() =&gt; {}, {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/core.js</td>
+                <td>240</td>
+                <td><pre>validate: !process.env.BABEL_TYPES_8_BREAKING ? (0, _utils.assertNodeType)(&#34;VariableDeclaration&#34;, &#34;LVal&#34;) : (0, _utils.assertNodeType)(&#34;VariableDeclaration&#34;, &#34;Identifier&#34;, &#34;MemberExpression&#34;, &#34;ArrayPattern&#34;, &#34;ObjectPattern&#34;, &#34;TSAsExpression&#34;, &#34;TSSatisfiesExpression&#34;, &#34;TSTypeAssertion&#34;, &#34;TSNonNullExpression&#34;)</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/core.js</td>
+                <td>316</td>
+                <td><pre>validate: !process.env.BABEL_TYPES_8_BREAKING ? undefined : function () {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/core.js</td>
+                <td>363</td>
+                <td><pre>validate: process.env.BABEL_TYPES_8_BREAKING ? (0, _utils.chain)((0, _utils.assertValueType)(&#34;string&#34;), Object.assign(function (node, key, val) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/core.js</td>
+                <td>372</td>
+                <td><pre>validate: process.env.BABEL_TYPES_8_BREAKING ? function (parent, key, node) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/core.js</td>
+                <td>476</td>
+                <td><pre>validate: process.env.BABEL_TYPES_8_BREAKING ? (0, _utils.chain)((0, _utils.assertValueType)(&#34;string&#34;), Object.assign(function (node, key, val) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/core.js</td>
+                <td>505</td>
+                <td><pre>builder: [&#34;object&#34;, &#34;property&#34;, &#34;computed&#34;, ...(!process.env.BABEL_TYPES_8_BREAKING ? [&#34;optional&#34;] : [])],</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/core.js</td>
+                <td>527</td>
+                <td><pre>}, !process.env.BABEL_TYPES_8_BREAKING ? {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/core.js</td>
+                <td>571</td>
+                <td><pre>}, !process.env.BABEL_TYPES_8_BREAKING ? {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/core.js</td>
+                <td>600</td>
+                <td><pre>builder: [&#34;key&#34;, &#34;value&#34;, &#34;computed&#34;, &#34;shorthand&#34;, ...(!process.env.BABEL_TYPES_8_BREAKING ? [&#34;decorators&#34;] : [])],</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/core.js</td>
+                <td>622</td>
+                <td><pre>validate: process.env.BABEL_TYPES_8_BREAKING ? (0, _utils.chain)((0, _utils.assertValueType)(&#34;boolean&#34;), Object.assign(function (node, key, shorthand) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/core.js</td>
+                <td>642</td>
+                <td><pre>validate: !process.env.BABEL_TYPES_8_BREAKING ? undefined : function () {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/core.js</td>
+                <td>658</td>
+                <td><pre>validate: !process.env.BABEL_TYPES_8_BREAKING ? (0, _utils.assertNodeType)(&#34;LVal&#34;) : (0, _utils.assertNodeType)(&#34;Identifier&#34;, &#34;ArrayPattern&#34;, &#34;ObjectPattern&#34;, &#34;MemberExpression&#34;, &#34;TSAsExpression&#34;, &#34;TSSatisfiesExpression&#34;, &#34;TSTypeAssertion&#34;, &#34;TSNonNullExpression&#34;)</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/core.js</td>
+                <td>661</td>
+                <td><pre>validate: process.env.BABEL_TYPES_8_BREAKING ? function (parent, key) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/core.js</td>
+                <td>733</td>
+                <td><pre>validate: process.env.BABEL_TYPES_8_BREAKING ? (0, _utils.chain)((0, _utils.assertNodeType)(&#34;BlockStatement&#34;), Object.assign(function (node) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/core.js</td>
+                <td>774</td>
+                <td><pre>validate: !process.env.BABEL_TYPES_8_BREAKING ? (0, _utils.assertNodeType)(&#34;Expression&#34;) : (0, _utils.assertNodeType)(&#34;Identifier&#34;, &#34;MemberExpression&#34;)</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/core.js</td>
+                <td>797</td>
+                <td><pre>validate: process.env.BABEL_TYPES_8_BREAKING ? (() =&gt; {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/core.js</td>
+                <td>818</td>
+                <td><pre>validate: !process.env.BABEL_TYPES_8_BREAKING ? (0, _utils.assertNodeType)(&#34;LVal&#34;) : (0, _utils.assertNodeType)(&#34;Identifier&#34;, &#34;ArrayPattern&#34;, &#34;ObjectPattern&#34;)</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/core.js</td>
+                <td>986</td>
+                <td><pre>validate: !process.env.BABEL_TYPES_8_BREAKING ? undefined : function () {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/core.js</td>
+                <td>1032</td>
+                <td><pre>validate: process.env.BABEL_TYPES_8_BREAKING ? (0, _utils.chain)((0, _utils.assertNodeType)(&#34;Declaration&#34;), Object.assign(function (node, key, val) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/core.js</td>
+                <td>1049</td>
+                <td><pre>if (!process.env.BABEL_TYPES_8_BREAKING) return sourced;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/core.js</td>
+                <td>1088</td>
+                <td><pre>if (!process.env.BABEL_TYPES_8_BREAKING) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/core.js</td>
+                <td>1195</td>
+                <td><pre>validate: process.env.BABEL_TYPES_8_BREAKING ? (0, _utils.chain)((0, _utils.assertNodeType)(&#34;Identifier&#34;), Object.assign(function (node, key, val) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/core.js</td>
+                <td>1381</td>
+                <td><pre>validate: process.env.BABEL_TYPES_8_BREAKING ? (0, _utils.chain)((0, _utils.assertValueType)(&#34;boolean&#34;), Object.assign(function (node, key, val) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/core.js</td>
+                <td>1452</td>
+                <td><pre>validate: !process.env.BABEL_TYPES_8_BREAKING ? (0, _utils.assertValueType)(&#34;boolean&#34;) : (0, _utils.chain)((0, _utils.assertValueType)(&#34;boolean&#34;), (0, _utils.assertOptionalChainStart)())</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/core.js</td>
+                <td>1466</td>
+                <td><pre>validate: !process.env.BABEL_TYPES_8_BREAKING ? (0, _utils.assertValueType)(&#34;boolean&#34;) : (0, _utils.chain)((0, _utils.assertValueType)(&#34;boolean&#34;), (0, _utils.assertOptionalChainStart)())</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/experimental.js</td>
+                <td>8</td>
+                <td><pre>fields: !process.env.BABEL_TYPES_8_BREAKING ? {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/definitions/utils.js</td>
+                <td>72</td>
+                <td><pre>const childValidator = process.env.BABEL_TYPES_8_BREAKING ? _validate.validateChild : () =&gt; {};</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@babel/types/lib/index.js</td>
+                <td>591</td>
+                <td><pre>if (process.env.BABEL_TYPES_8_BREAKING) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@emotion/hash/dist/emotion-hash.cjs.js</td>
+                <td>3</td>
+                <td><pre>if (process.env.NODE_ENV === &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@jspm/core/nodelibs/deno/process-production.ts</td>
+                <td>4</td>
+                <td><pre>process.env.NODE_ENV = &#39;production&#39;;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@jspm/core/nodelibs/node/process-production.js</td>
+                <td>4</td>
+                <td><pre>process.env.NODE_ENV = &#39;production&#39;;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@jspm/core/test/server.js</td>
+                <td>26</td>
+                <td><pre>const shouldExit = !process.env.WATCH_MODE;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@jspm/core/test/server.js</td>
+                <td>27</td>
+                <td><pre>const testName = process.env.TEST_NAME ?? &#39;test&#39;;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@jspm/core/test/server.js</td>
+                <td>61</td>
+                <td><pre>process.exit(failTimeout || process.env.CI_BROWSER ? 1 : 0);</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@jspm/core/test/server.js</td>
+                <td>170</td>
+                <td><pre>if (process.env.CI_BROWSER) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@jspm/core/test/server.js</td>
+                <td>171</td>
+                <td><pre>const args = process.env.CI_BROWSER_FLAGS ? process.env.CI_BROWSER_FLAGS.split(&#39; &#39;) : [];</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@jspm/core/test/server.js</td>
+                <td>172</td>
+                <td><pre>console.log(&#39;Spawning browser: &#39; &#43; process.env.CI_BROWSER &#43; &#39; &#39; &#43; args.join(&#39; &#39;));</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@jspm/core/test/server.js</td>
+                <td>173</td>
+                <td><pre>spawnPs = spawn(process.env.CI_BROWSER, [...args, `http://localhost:${port}/test/${testName}.html`]);</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@mdx-js/mdx/lib/condition.js</td>
+                <td>3</td>
+                <td><pre>export const development = process.env.NODE_ENV === &#39;development&#39;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@npmcli/promise-spawn/lib/index.js</td>
+                <td>72</td>
+                <td><pre>command = process.platform === &#39;win32&#39; ? process.env.ComSpec : &#39;sh&#39;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@npmcli/promise-spawn/lib/index.js</td>
+                <td>103</td>
+                <td><pre>path: (options.env &amp;&amp; options.env.PATH) || process.env.PATH,</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@npmcli/promise-spawn/lib/index.js</td>
+                <td>104</td>
+                <td><pre>pathext: (options.env &amp;&amp; options.env.PATHEXT) || process.env.PATHEXT,</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@npmcli/promise-spawn/lib/index.js</td>
+                <td>143</td>
+                <td><pre>options.shell = process.env.ComSpec</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/dev/dist/cli/commands.js</td>
+                <td>175</td>
+                <td><pre>root = process.env.REMIX_ROOT || process.cwd();</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/dev/dist/cli/commands.js</td>
+                <td>202</td>
+                <td><pre>if (process.env.NODE_ENV &amp;&amp; process.env.NODE_ENV !== &#34;development&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/dev/dist/cli/commands.js</td>
+                <td>203</td>
+                <td><pre>logger.logger.warn(`overriding NODE_ENV=${process.env.NODE_ENV} to development`);</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/dev/dist/cli/commands.js</td>
+                <td>205</td>
+                <td><pre>process.env.NODE_ENV = &#34;development&#34;;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/dev/dist/cli/commands.js</td>
+                <td>327</td>
+                <td><pre>let REMIX_DEV_ORIGIN = process.env.REMIX_DEV_ORIGIN;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/dev/dist/cli/run.js</td>
+                <td>240</td>
+                <td><pre>await commands.init(input[1] || process.env.REMIX_ROOT || process.cwd(), {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/dev/dist/cli/run.js</td>
+                <td>248</td>
+                <td><pre>if (!process.env.NODE_ENV) process.env.NODE_ENV = &#34;production&#34;;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/dev/dist/cli/run.js</td>
+                <td>249</td>
+                <td><pre>await commands.build(input[1], process.env.NODE_ENV, flags.sourcemap);</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/dev/dist/cli/run.js</td>
+                <td>255</td>
+                <td><pre>if (!process.env.NODE_ENV) process.env.NODE_ENV = &#34;development&#34;;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/dev/dist/cli/run.js</td>
+                <td>256</td>
+                <td><pre>await commands.watch(input[1], process.env.NODE_ENV);</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/dev/dist/colors.js</td>
+                <td>22</td>
+                <td><pre>const useColor = chalk__default[&#34;default&#34;].supportsColor &amp;&amp; !process.env.NO_COLOR;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/dev/dist/compiler/css/compiler.js</td>
+                <td>79</td>
+                <td><pre>&#34;process.env.NODE_ENV&#34;: JSON.stringify(ctx.options.mode)</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/dev/dist/compiler/js/compiler.js</td>
+                <td>116</td>
+                <td><pre>&#34;process.env.NODE_ENV&#34;: JSON.stringify(ctx.options.mode),</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/dev/dist/compiler/js/compiler.js</td>
+                <td>117</td>
+                <td><pre>&#34;process.env.REMIX_DEV_ORIGIN&#34;: JSON.stringify(ctx.options.REMIX_DEV_ORIGIN ?? &#34;&#34;),</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/dev/dist/compiler/server/compiler.js</td>
+                <td>111</td>
+                <td><pre>&#34;process.env.NODE_ENV&#34;: JSON.stringify(ctx.options.mode),</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/dev/dist/compiler/server/compiler.js</td>
+                <td>112</td>
+                <td><pre>&#34;process.env.REMIX_DEV_ORIGIN&#34;: JSON.stringify(ctx.options.REMIX_DEV_ORIGIN ?? &#34;&#34;)</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/dev/dist/config.js</td>
+                <td>50</td>
+                <td><pre>remixRoot = process.env.REMIX_ROOT || process.cwd();</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/dev/dist/config.js</td>
+                <td>61</td>
+                <td><pre>if (process.env.JEST_WORKER_ID) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/dev/dist/devServer_unstable/index.js</td>
+                <td>143</td>
+                <td><pre>PATH: bin &#43; (process.platform === &#34;win32&#34; ? &#34;;&#34; : &#34;:&#34;) &#43; process.env.PATH,</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/dev/dist/devServer_unstable/index.js</td>
+                <td>145</td>
+                <td><pre>FORCE_COLOR: process.env.NO_COLOR === undefined ? &#34;1&#34; : &#34;0&#34;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/dev/dist/vite/plugin.js</td>
+                <td>96</td>
+                <td><pre>root = process.env.REMIX_ROOT || process.cwd();</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/dev/dist/vite/plugin.js</td>
+                <td>359</td>
+                <td><pre>let rootDirectory = viteUserConfig.root ?? process.env.REMIX_ROOT ?? process.cwd();</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/express/dist/server.js</td>
+                <td>34</td>
+                <td><pre>mode = process.env.NODE_ENV</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/react/dist/browser.js</td>
+                <td>183</td>
+                <td><pre>let [criticalCss, setCriticalCss] = React__namespace.useState(process.env.NODE_ENV === &#34;development&#34; ? window.__remixContext.criticalCss : undefined);</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/react/dist/browser.js</td>
+                <td>184</td>
+                <td><pre>if (process.env.NODE_ENV === &#34;development&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/react/dist/components.js</td>
+                <td>624</td>
+                <td><pre>contextScript &#43;= !activeDeferreds ? &#34;&#34; : [&#34;__remixContext.p = function(v,e,p,x) {&#34;, &#34;  if (typeof e !== &#39;undefined&#39;) {&#34;, process.env.NODE_ENV === &#34;development&#34; ? &#34;    x=new Error(e.message);\n    x.stack=e.stack;&#34; : &#39;    x=new Error(&#34;Unexpected Server Error&#34;);\n    x.stack=undefined;&#39;, &#34;    p=Promise.reject(x);&#34;, &#34;  } else {&#34;, &#34;    p=Promise.resolve(v);&#34;, &#34;  }&#34;, &#34;  return p;&#34;, &#34;};&#34;, &#34;__remixContext.n = function(i,k) {&#34;, &#34;  __remixContext.t = __remixContext.t || {};&#34;, &#34;  __remixContext.t[i] = __remixContext.t[i] || {};&#34;, &#34;  let p = new Promise((r, e) =&gt; {__remixContext.t[i][k] = {r:(v)=&gt;{r(v);},e:(v)=&gt;{e(v);}};});&#34;, typeof abortDelay === &#34;number&#34; ? `setTimeout(() =&gt; {if(typeof p._error !== &#34;undefined&#34; || typeof p._data !== &#34;undefined&#34;){return;} __remixContext.t[i][k].e(new Error(&#34;Server timeout.&#34;))}, ${abortDelay});` : &#34;&#34;, &#34;  return p;&#34;, &#34;};&#34;, &#34;__remixContext.r = function(i,k,v,e,p,x) {&#34;, &#34;  p = __remixContext.t[i][k];&#34;, &#34;  if (typeof e !== &#39;undefined&#39;) {&#34;, process.env.NODE_ENV === &#34;development&#34; ? &#34;    x=new Error(e.message);\n    x.stack=e.stack;&#34; : &#39;    x=new Error(&#34;Unexpected Server Error&#34;);\n    x.stack=undefined;&#39;, &#34;    p.e(x);&#34;, &#34;  } else {&#34;, &#34;    p.r(v);&#34;, &#34;  }&#34;, &#34;};&#34;].join(&#34;\n&#34;) &#43; Object.entries(activeDeferreds).map(([routeId, deferredData]) =&gt; {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/react/dist/components.js</td>
+                <td>824</td>
+                <td><pre>process.env.NODE_ENV !== &#34;development&#34; ? () =&gt; null : function LiveReload({</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/react/dist/components.js</td>
+                <td>830</td>
+                <td><pre>origin ??= process.env.REMIX_DEV_ORIGIN;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/react/dist/esm/browser.js</td>
+                <td>223</td>
+                <td><pre>let [criticalCss, setCriticalCss] = React.useState(process.env.NODE_ENV === &#34;development&#34; ? window.__remixContext.criticalCss : undefined);</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/react/dist/esm/browser.js</td>
+                <td>224</td>
+                <td><pre>if (process.env.NODE_ENV === &#34;development&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/react/dist/esm/components.js</td>
+                <td>600</td>
+                <td><pre>contextScript &#43;= !activeDeferreds ? &#34;&#34; : [&#34;__remixContext.p = function(v,e,p,x) {&#34;, &#34;  if (typeof e !== &#39;undefined&#39;) {&#34;, process.env.NODE_ENV === &#34;development&#34; ? &#34;    x=new Error(e.message);\n    x.stack=e.stack;&#34; : &#39;    x=new Error(&#34;Unexpected Server Error&#34;);\n    x.stack=undefined;&#39;, &#34;    p=Promise.reject(x);&#34;, &#34;  } else {&#34;, &#34;    p=Promise.resolve(v);&#34;, &#34;  }&#34;, &#34;  return p;&#34;, &#34;};&#34;, &#34;__remixContext.n = function(i,k) {&#34;, &#34;  __remixContext.t = __remixContext.t || {};&#34;, &#34;  __remixContext.t[i] = __remixContext.t[i] || {};&#34;, &#34;  let p = new Promise((r, e) =&gt; {__remixContext.t[i][k] = {r:(v)=&gt;{r(v);},e:(v)=&gt;{e(v);}};});&#34;, typeof abortDelay === &#34;number&#34; ? `setTimeout(() =&gt; {if(typeof p._error !== &#34;undefined&#34; || typeof p._data !== &#34;undefined&#34;){return;} __remixContext.t[i][k].e(new Error(&#34;Server timeout.&#34;))}, ${abortDelay});` : &#34;&#34;, &#34;  return p;&#34;, &#34;};&#34;, &#34;__remixContext.r = function(i,k,v,e,p,x) {&#34;, &#34;  p = __remixContext.t[i][k];&#34;, &#34;  if (typeof e !== &#39;undefined&#39;) {&#34;, process.env.NODE_ENV === &#34;development&#34; ? &#34;    x=new Error(e.message);\n    x.stack=e.stack;&#34; : &#39;    x=new Error(&#34;Unexpected Server Error&#34;);\n    x.stack=undefined;&#39;, &#34;    p.e(x);&#34;, &#34;  } else {&#34;, &#34;    p.r(v);&#34;, &#34;  }&#34;, &#34;};&#34;].join(&#34;\n&#34;) &#43; Object.entries(activeDeferreds).map(([routeId, deferredData]) =&gt; {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/react/dist/esm/components.js</td>
+                <td>800</td>
+                <td><pre>process.env.NODE_ENV !== &#34;development&#34; ? () =&gt; null : function LiveReload({</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/react/dist/esm/components.js</td>
+                <td>812</td>
+                <td><pre>origin ??= process.env.REMIX_DEV_ORIGIN;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/serve/dist/cli.js</td>
+                <td>41</td>
+                <td><pre>process.env.NODE_ENV = process.env.NODE_ENV ?? &#34;production&#34;;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/serve/dist/cli.js</td>
+                <td>66</td>
+                <td><pre>let port = parseNumber(process.env.PORT) ?? (await getPort__default[&#34;default&#34;]({</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/serve/dist/cli.js</td>
+                <td>118</td>
+                <td><pre>let address = process.env.HOST || ((_Object$values$flat$f = Object.values(os__default[&#34;default&#34;].networkInterfaces()).flat().find(ip =&gt; String(ip === null || ip === void 0 ? void 0 : ip.family).includes(&#34;4&#34;) &amp;&amp; !(ip !== null &amp;&amp; ip !== void 0 &amp;&amp; ip.internal))) === null || _Object$values$flat$f === void 0 ? void 0 : _Object$values$flat$f.address);</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/serve/dist/cli.js</td>
+                <td>124</td>
+                <td><pre>if (process.env.NODE_ENV === &#34;development&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/serve/dist/cli.js</td>
+                <td>139</td>
+                <td><pre>app.all(&#34;*&#34;, process.env.NODE_ENV === &#34;development&#34; ? createDevRequestHandler(build) : express$1.createRequestHandler({</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/serve/dist/cli.js</td>
+                <td>141</td>
+                <td><pre>mode: process.env.NODE_ENV</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/serve/dist/cli.js</td>
+                <td>143</td>
+                <td><pre>let server = process.env.HOST ? app.listen(port, process.env.HOST, onListen) : app.listen(port, onListen);</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/server-runtime/dist/dev.js</td>
+                <td>16</td>
+                <td><pre>origin ??= process.env.REMIX_DEV_ORIGIN;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@remix-run/server-runtime/dist/esm/dev.js</td>
+                <td>12</td>
+                <td><pre>origin ??= process.env.REMIX_DEV_ORIGIN;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@types/node/child_process.d.ts</td>
+                <td>31</td>
+                <td><pre>* variable if `env` is in the `options` object. Otherwise, `process.env.PATH` is</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@types/node/cluster.d.ts</td>
+                <td>403</td>
+                <td><pre>* True if the process is a primary. This is determined by the `process.env.NODE_UNIQUE_ID`. If `process.env.NODE_UNIQUE_ID`</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@types/node/http.d.ts</td>
+                <td>1346</td>
+                <td><pre>* new URL(`http://${process.env.HOST ?? &#39;localhost&#39;}${request.url}`);</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@types/node/http.d.ts</td>
+                <td>1349</td>
+                <td><pre>* When `request.url` is `&#39;/status?name=ryan&#39;` and `process.env.HOST` is undefined:</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@types/node/http.d.ts</td>
+                <td>1353</td>
+                <td><pre>* &gt; new URL(`http://${process.env.HOST ?? &#39;localhost&#39;}${request.url}`);</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@types/node/http.d.ts</td>
+                <td>1370</td>
+                <td><pre>* Ensure that you set `process.env.HOST` to the server&#39;s host name, or consider replacing this part entirely. If using `req.headers.host`, ensure proper</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@types/node/module.d.ts</td>
+                <td>338</td>
+                <td><pre>* `process.env.NODE_COMPILE_CACHE` value to compile cache directory so the behavior can</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@types/node/v8.d.ts</td>
+                <td>785</td>
+                <td><pre>*   const lang = process.env.BOOK_LANG || &#39;en_US&#39;;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@typescript-eslint/typescript-estree/dist/create-program/getWatchProgramsForProjects.js</td>
+                <td>286</td>
+                <td><pre>if (process.env.TSESTREE_NO_INVALIDATION === &#39;true&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@typescript-eslint/typescript-estree/dist/parseSettings/createParseSettings.js</td>
+                <td>92</td>
+                <td><pre>process.env.TYPESCRIPT_ESLINT_EXPERIMENTAL_TSSERVER === &#39;true&#39;)</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@typescript-eslint/typescript-estree/dist/parseSettings/createParseSettings.js</td>
+                <td>117</td>
+                <td><pre>process.env.NODE_ENV !== &#39;test&#39;,</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@typescript-eslint/typescript-estree/dist/parseSettings/inferSingleRun.js</td>
+                <td>27</td>
+                <td><pre>if (process.env.TSESTREE_SINGLE_RUN === &#39;false&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@typescript-eslint/typescript-estree/dist/parseSettings/inferSingleRun.js</td>
+                <td>30</td>
+                <td><pre>if (process.env.TSESTREE_SINGLE_RUN === &#39;true&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@typescript-eslint/typescript-estree/dist/parseSettings/inferSingleRun.js</td>
+                <td>37</td>
+                <td><pre>process.env.CI === &#39;true&#39; ||</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@typescript-eslint/typescript-estree/node_modules/minimatch/dist/cjs/index.js</td>
+                <td>76</td>
+                <td><pre>process.env.__MINIMATCH_TESTING_PLATFORM__) ||</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@typescript-eslint/typescript-estree/node_modules/minimatch/dist/mjs/index.js</td>
+                <td>69</td>
+                <td><pre>process.env.__MINIMATCH_TESTING_PLATFORM__) ||</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/babel-plugin-debug-ids/dist/vanilla-extract-babel-plugin-debug-ids.cjs.js</td>
+                <td>3</td>
+                <td><pre>if (process.env.NODE_ENV === &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/css/adapter/dist/vanilla-extract-css-adapter.browser.cjs.js</td>
+                <td>11</td>
+                <td><pre>getIdentOption: () =&gt; process.env.NODE_ENV === &#39;production&#39; ? &#39;short&#39; : &#39;debug&#39;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/css/adapter/dist/vanilla-extract-css-adapter.browser.cjs.js</td>
+                <td>63</td>
+                <td><pre>return process.env.NODE_ENV === &#39;production&#39; ? &#39;short&#39; : &#39;debug&#39;;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/css/adapter/dist/vanilla-extract-css-adapter.browser.esm.js</td>
+                <td>7</td>
+                <td><pre>getIdentOption: () =&gt; process.env.NODE_ENV === &#39;production&#39; ? &#39;short&#39; : &#39;debug&#39;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/css/adapter/dist/vanilla-extract-css-adapter.browser.esm.js</td>
+                <td>59</td>
+                <td><pre>return process.env.NODE_ENV === &#39;production&#39; ? &#39;short&#39; : &#39;debug&#39;;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/css/adapter/dist/vanilla-extract-css-adapter.cjs.dev.js</td>
+                <td>11</td>
+                <td><pre>getIdentOption: () =&gt; process.env.NODE_ENV === &#39;production&#39; ? &#39;short&#39; : &#39;debug&#39;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/css/adapter/dist/vanilla-extract-css-adapter.cjs.dev.js</td>
+                <td>63</td>
+                <td><pre>return process.env.NODE_ENV === &#39;production&#39; ? &#39;short&#39; : &#39;debug&#39;;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/css/adapter/dist/vanilla-extract-css-adapter.cjs.js</td>
+                <td>3</td>
+                <td><pre>if (process.env.NODE_ENV === &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/css/adapter/dist/vanilla-extract-css-adapter.esm.js</td>
+                <td>7</td>
+                <td><pre>getIdentOption: () =&gt; process.env.NODE_ENV === &#39;production&#39; ? &#39;short&#39; : &#39;debug&#39;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/css/adapter/dist/vanilla-extract-css-adapter.esm.js</td>
+                <td>59</td>
+                <td><pre>return process.env.NODE_ENV === &#39;production&#39; ? &#39;short&#39; : &#39;debug&#39;;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/css/disableRuntimeStyles/dist/vanilla-extract-css-disableRuntimeStyles.cjs.js</td>
+                <td>3</td>
+                <td><pre>if (process.env.NODE_ENV === &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/css/dist/vanilla-extract-css.browser.cjs.js</td>
+                <td>56</td>
+                <td><pre>getIdentOption: () =&gt; process.env.NODE_ENV === &#39;production&#39; ? &#39;short&#39; : &#39;debug&#39;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/css/dist/vanilla-extract-css.browser.cjs.js</td>
+                <td>195</td>
+                <td><pre>if (process.env.NODE_ENV !== &#39;test&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/css/dist/vanilla-extract-css.browser.esm.js</td>
+                <td>44</td>
+                <td><pre>getIdentOption: () =&gt; process.env.NODE_ENV === &#39;production&#39; ? &#39;short&#39; : &#39;debug&#39;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/css/dist/vanilla-extract-css.browser.esm.js</td>
+                <td>183</td>
+                <td><pre>if (process.env.NODE_ENV !== &#39;test&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/css/dist/vanilla-extract-css.cjs.dev.js</td>
+                <td>56</td>
+                <td><pre>getIdentOption: () =&gt; process.env.NODE_ENV === &#39;production&#39; ? &#39;short&#39; : &#39;debug&#39;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/css/dist/vanilla-extract-css.cjs.dev.js</td>
+                <td>195</td>
+                <td><pre>if (process.env.NODE_ENV !== &#39;test&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/css/dist/vanilla-extract-css.cjs.js</td>
+                <td>3</td>
+                <td><pre>if (process.env.NODE_ENV === &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/css/dist/vanilla-extract-css.esm.js</td>
+                <td>44</td>
+                <td><pre>getIdentOption: () =&gt; process.env.NODE_ENV === &#39;production&#39; ? &#39;short&#39; : &#39;debug&#39;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/css/dist/vanilla-extract-css.esm.js</td>
+                <td>183</td>
+                <td><pre>if (process.env.NODE_ENV !== &#39;test&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/css/fileScope/dist/vanilla-extract-css-fileScope.cjs.js</td>
+                <td>3</td>
+                <td><pre>if (process.env.NODE_ENV === &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/css/functionSerializer/dist/vanilla-extract-css-functionSerializer.cjs.js</td>
+                <td>3</td>
+                <td><pre>if (process.env.NODE_ENV === &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/css/injectStyles/dist/vanilla-extract-css-injectStyles.cjs.js</td>
+                <td>3</td>
+                <td><pre>if (process.env.NODE_ENV === &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/css/recipe/dist/vanilla-extract-css-recipe.cjs.js</td>
+                <td>3</td>
+                <td><pre>if (process.env.NODE_ENV === &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/css/transformCss/dist/vanilla-extract-css-transformCss.cjs.js</td>
+                <td>3</td>
+                <td><pre>if (process.env.NODE_ENV === &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/integration/dist/vanilla-extract-integration.cjs.dev.js</td>
+                <td>75</td>
+                <td><pre>const originalNodeEnv = process.env.NODE_ENV;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/integration/dist/vanilla-extract-integration.cjs.dev.js</td>
+                <td>93</td>
+                <td><pre>identOption = process.env.NODE_ENV === &#39;production&#39; ? &#39;short&#39; : &#39;debug&#39;,</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/integration/dist/vanilla-extract-integration.cjs.dev.js</td>
+                <td>121</td>
+                <td><pre>const currentNodeEnv = process.env.NODE_ENV;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/integration/dist/vanilla-extract-integration.cjs.dev.js</td>
+                <td>126</td>
+                <td><pre>process.env.NODE_ENV = originalNodeEnv;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/integration/dist/vanilla-extract-integration.cjs.dev.js</td>
+                <td>136</td>
+                <td><pre>process.env.NODE_ENV = currentNodeEnv;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/integration/dist/vanilla-extract-integration.cjs.js</td>
+                <td>3</td>
+                <td><pre>if (process.env.NODE_ENV === &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/integration/dist/vanilla-extract-integration.cjs.prod.js</td>
+                <td>126</td>
+                <td><pre>process.env.NODE_ENV = originalNodeEnv;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/integration/dist/vanilla-extract-integration.cjs.prod.js</td>
+                <td>136</td>
+                <td><pre>process.env.NODE_ENV = currentNodeEnv;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/@vanilla-extract/private/dist/vanilla-extract-private.cjs.js</td>
+                <td>3</td>
+                <td><pre>if (process.env.NODE_ENV === &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/argparse/argparse.js</td>
+                <td>98</td>
+                <td><pre>columns: &#43;process.env.COLUMNS || process.stdout.columns || 80</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/autoprefixer/lib/processor.js</td>
+                <td>559</td>
+                <td><pre>} else if (typeof process.env.AUTOPREFIXER_GRID !== &#39;undefined&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/autoprefixer/lib/processor.js</td>
+                <td>560</td>
+                <td><pre>if (process.env.AUTOPREFIXER_GRID === &#39;autoplace&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/body-parser/node_modules/debug/src/browser.js</td>
+                <td>158</td>
+                <td><pre>r = process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/body-parser/node_modules/debug/src/node.js</td>
+                <td>61</td>
+                <td><pre>var fd = parseInt(process.env.DEBUG_FD, 10) || 2;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/body-parser/node_modules/debug/src/node.js</td>
+                <td>143</td>
+                <td><pre>delete process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/body-parser/node_modules/debug/src/node.js</td>
+                <td>145</td>
+                <td><pre>process.env.DEBUG = namespaces;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/body-parser/node_modules/debug/src/node.js</td>
+                <td>157</td>
+                <td><pre>return process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/body-parser/node_modules/debug/src/node.js</td>
+                <td>245</td>
+                <td><pre>* Enable namespaces listed in `process.env.DEBUG` initially.</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/browserify-zlib/test/test-zlib.js</td>
+                <td>49</td>
+                <td><pre>if (!process.env.PUMMEL) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/browserify-zlib/test/test-zlib.js</td>
+                <td>60</td>
+                <td><pre>if (process.env.FAST) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/browserslist/node.js</td>
+                <td>42</td>
+                <td><pre>if (!process.env.BROWSERSLIST_DISABLE_CACHE) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/browserslist/node.js</td>
+                <td>60</td>
+                <td><pre>if (!process.env.BROWSERSLIST_ROOT_PATH) return true</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/browserslist/node.js</td>
+                <td>61</td>
+                <td><pre>var rootPath = path.resolve(process.env.BROWSERSLIST_ROOT_PATH)</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/browserslist/node.js</td>
+                <td>86</td>
+                <td><pre>} else if (process.env.BROWSERSLIST_ENV) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/browserslist/node.js</td>
+                <td>87</td>
+                <td><pre>name = process.env.BROWSERSLIST_ENV</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/browserslist/node.js</td>
+                <td>88</td>
+                <td><pre>} else if (process.env.NODE_ENV) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/browserslist/node.js</td>
+                <td>89</td>
+                <td><pre>name = process.env.NODE_ENV</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/browserslist/node.js</td>
+                <td>199</td>
+                <td><pre>if (!ctx.dangerousExtend &amp;&amp; !process.env.BROWSERSLIST_DANGEROUS_EXTEND) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/browserslist/node.js</td>
+                <td>220</td>
+                <td><pre>if (!ctx.dangerousExtend &amp;&amp; !process.env.BROWSERSLIST_DANGEROUS_EXTEND) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/browserslist/node.js</td>
+                <td>234</td>
+                <td><pre>} else if (process.env.BROWSERSLIST_STATS) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/browserslist/node.js</td>
+                <td>235</td>
+                <td><pre>stats = process.env.BROWSERSLIST_STATS</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/browserslist/node.js</td>
+                <td>253</td>
+                <td><pre>if (process.env.BROWSERSLIST) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/browserslist/node.js</td>
+                <td>254</td>
+                <td><pre>return process.env.BROWSERSLIST</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/browserslist/node.js</td>
+                <td>255</td>
+                <td><pre>} else if (opts.config || process.env.BROWSERSLIST_CONFIG) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/browserslist/node.js</td>
+                <td>256</td>
+                <td><pre>var file = opts.config || process.env.BROWSERSLIST_CONFIG</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/browserslist/node.js</td>
+                <td>402</td>
+                <td><pre>if (!process.env.BROWSERSLIST_DISABLE_CACHE) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/browserslist/node.js</td>
+                <td>425</td>
+                <td><pre>if (process.env.BROWSERSLIST_IGNORE_OLD_DATA) return</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/chokidar/index.js</td>
+                <td>341</td>
+                <td><pre>const envPoll = process.env.CHOKIDAR_USEPOLLING;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/chokidar/index.js</td>
+                <td>353</td>
+                <td><pre>const envInterval = process.env.CHOKIDAR_INTERVAL;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/chokidar/lib/fsevents-handler.js</td>
+                <td>11</td>
+                <td><pre>if (process.env.CHOKIDAR_PRINT_FSEVENTS_REQUIRE_ERROR) console.error(error);</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/compression/node_modules/debug/src/browser.js</td>
+                <td>158</td>
+                <td><pre>r = process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/compression/node_modules/debug/src/node.js</td>
+                <td>61</td>
+                <td><pre>var fd = parseInt(process.env.DEBUG_FD, 10) || 2;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/compression/node_modules/debug/src/node.js</td>
+                <td>143</td>
+                <td><pre>delete process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/compression/node_modules/debug/src/node.js</td>
+                <td>145</td>
+                <td><pre>process.env.DEBUG = namespaces;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/compression/node_modules/debug/src/node.js</td>
+                <td>157</td>
+                <td><pre>return process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/compression/node_modules/debug/src/node.js</td>
+                <td>245</td>
+                <td><pre>* Enable namespaces listed in `process.env.DEBUG` initially.</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/cross-spawn/node_modules/which/which.js</td>
+                <td>2</td>
+                <td><pre>process.env.OSTYPE === &#39;cygwin&#39; ||</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/cross-spawn/node_modules/which/which.js</td>
+                <td>3</td>
+                <td><pre>process.env.OSTYPE === &#39;msys&#39;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/cross-spawn/node_modules/which/which.js</td>
+                <td>22</td>
+                <td><pre>...(opt.path || process.env.PATH ||</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/cross-spawn/node_modules/which/which.js</td>
+                <td>27</td>
+                <td><pre>? opt.pathExt || process.env.PATHEXT || &#39;.EXE;.CMD;.BAT;.COM&#39;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/debug/src/browser.js</td>
+                <td>230</td>
+                <td><pre>r = process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/debug/src/node.js</td>
+                <td>205</td>
+                <td><pre>process.env.DEBUG = namespaces;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/debug/src/node.js</td>
+                <td>209</td>
+                <td><pre>delete process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/debug/src/node.js</td>
+                <td>221</td>
+                <td><pre>return process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/depd/index.js</td>
+                <td>159</td>
+                <td><pre>var str = process.env.NO_DEPRECATION || &#39;&#39;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/depd/index.js</td>
+                <td>175</td>
+                <td><pre>var str = process.env.TRACE_DEPRECATION || &#39;&#39;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/dotenv/lib/env-options.js</td>
+                <td>4</td>
+                <td><pre>if (process.env.DOTENV_CONFIG_ENCODING != null) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/dotenv/lib/env-options.js</td>
+                <td>5</td>
+                <td><pre>options.encoding = process.env.DOTENV_CONFIG_ENCODING</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/dotenv/lib/env-options.js</td>
+                <td>8</td>
+                <td><pre>if (process.env.DOTENV_CONFIG_PATH != null) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/dotenv/lib/env-options.js</td>
+                <td>9</td>
+                <td><pre>options.path = process.env.DOTENV_CONFIG_PATH</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/dotenv/lib/env-options.js</td>
+                <td>12</td>
+                <td><pre>if (process.env.DOTENV_CONFIG_DEBUG != null) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/dotenv/lib/env-options.js</td>
+                <td>13</td>
+                <td><pre>options.debug = process.env.DOTENV_CONFIG_DEBUG</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/dotenv/lib/env-options.js</td>
+                <td>16</td>
+                <td><pre>if (process.env.DOTENV_CONFIG_OVERRIDE != null) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/dotenv/lib/env-options.js</td>
+                <td>17</td>
+                <td><pre>options.override = process.env.DOTENV_CONFIG_OVERRIDE</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/dotenv/lib/env-options.js</td>
+                <td>20</td>
+                <td><pre>if (process.env.DOTENV_CONFIG_DOTENV_KEY != null) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/dotenv/lib/env-options.js</td>
+                <td>21</td>
+                <td><pre>options.DOTENV_KEY = process.env.DOTENV_CONFIG_DOTENV_KEY</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/dotenv/lib/main.d.ts</td>
+                <td>47</td>
+                <td><pre>* example: `require(&#39;dotenv&#39;).config({ debug: process.env.DEBUG })`</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/dotenv/lib/main.d.ts</td>
+                <td>72</td>
+                <td><pre>* Pass the DOTENV_KEY directly to config options. Defaults to looking for process.env.DOTENV_KEY environment variable. Note this only applies to decrypting .env.vault files. If passed as null or undefined, or not passed at all, dotenv falls back to its traditional job of parsing a .env file.</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/dotenv/lib/main.d.ts</td>
+                <td>90</td>
+                <td><pre>* example: `require(&#39;dotenv&#39;).config({ debug: process.env.DEBUG })`</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/dotenv/lib/main.js</td>
+                <td>111</td>
+                <td><pre>if (process.env.DOTENV_KEY &amp;&amp; process.env.DOTENV_KEY.length &gt; 0) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/dotenv/lib/main.js</td>
+                <td>112</td>
+                <td><pre>return process.env.DOTENV_KEY</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/duplexify/node_modules/readable-stream/readable.js</td>
+                <td>2</td>
+                <td><pre>if (process.env.READABLE_STREAM === &#39;disable&#39; &amp;&amp; Stream) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/duplexify/node_modules/readable-stream/writable.js</td>
+                <td>4</td>
+                <td><pre>if (process.env.READABLE_STREAM === &#39;disable&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/esbuild/install.js</td>
+                <td>29</td>
+                <td><pre>var ESBUILD_BINARY_PATH = process.env.ESBUILD_BINARY_PATH || ESBUILD_BINARY_PATH;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/esbuild/lib/main.js</td>
+                <td>1736</td>
+                <td><pre>var ESBUILD_BINARY_PATH = process.env.ESBUILD_BINARY_PATH || ESBUILD_BINARY_PATH;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/esbuild/lib/main.js</td>
+                <td>1929</td>
+                <td><pre>if (process.env.ESBUILD_WORKER_THREADS !== &#34;0&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/esbuild/lib/main.js</td>
+                <td>2228</td>
+                <td><pre>maxBuffer: &#43;process.env.ESBUILD_MAX_BUFFER || 16 * 1024 * 1024</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/eslint/lib/eslint/flat-eslint.js</td>
+                <td>1137</td>
+                <td><pre>switch (process.env.ESLINT_USE_FLAT_CONFIG) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/eslint/lib/linter/timing.js</td>
+                <td>42</td>
+                <td><pre>const enabled = !!process.env.TIMING;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/eslint/lib/linter/timing.js</td>
+                <td>54</td>
+                <td><pre>if (typeof process.env.TIMING !== &#34;string&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/eslint/lib/linter/timing.js</td>
+                <td>58</td>
+                <td><pre>if (process.env.TIMING.toLowerCase() === &#34;all&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/eslint/lib/linter/timing.js</td>
+                <td>62</td>
+                <td><pre>const TIMING_ENV_VAR_AS_INTEGER = Number.parseInt(process.env.TIMING, 10);</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/eslint-import-resolver-node/node_modules/debug/src/browser.js</td>
+                <td>140</td>
+                <td><pre>r = process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/eslint-import-resolver-node/node_modules/debug/src/node.js</td>
+                <td>120</td>
+                <td><pre>process.env.DEBUG = namespaces;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/eslint-import-resolver-node/node_modules/debug/src/node.js</td>
+                <td>124</td>
+                <td><pre>delete process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/eslint-import-resolver-node/node_modules/debug/src/node.js</td>
+                <td>136</td>
+                <td><pre>return process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/eslint-module-utils/node_modules/debug/src/browser.js</td>
+                <td>140</td>
+                <td><pre>r = process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/eslint-module-utils/node_modules/debug/src/node.js</td>
+                <td>120</td>
+                <td><pre>process.env.DEBUG = namespaces;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/eslint-module-utils/node_modules/debug/src/node.js</td>
+                <td>124</td>
+                <td><pre>delete process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/eslint-module-utils/node_modules/debug/src/node.js</td>
+                <td>136</td>
+                <td><pre>return process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/eslint-plugin-import/node_modules/debug/src/browser.js</td>
+                <td>140</td>
+                <td><pre>r = process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/eslint-plugin-import/node_modules/debug/src/node.js</td>
+                <td>120</td>
+                <td><pre>process.env.DEBUG = namespaces;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/eslint-plugin-import/node_modules/debug/src/node.js</td>
+                <td>124</td>
+                <td><pre>delete process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/eslint-plugin-import/node_modules/debug/src/node.js</td>
+                <td>136</td>
+                <td><pre>return process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/eslint-plugin-import/node_modules/semver/semver.js</td>
+                <td>7</td>
+                <td><pre>process.env.NODE_DEBUG &amp;&amp;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/eslint-plugin-import/node_modules/semver/semver.js</td>
+                <td>8</td>
+                <td><pre>/\bsemver\b/i.test(process.env.NODE_DEBUG)) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/eslint-plugin-react/node_modules/resolve/lib/homedir.js</td>
+                <td>8</td>
+                <td><pre>var home = process.env.HOME;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/eslint-plugin-react/node_modules/resolve/lib/homedir.js</td>
+                <td>9</td>
+                <td><pre>var user = process.env.LOGNAME || process.env.USER || process.env.LNAME || process.env.USERNAME;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/eslint-plugin-react/node_modules/resolve/lib/homedir.js</td>
+                <td>12</td>
+                <td><pre>return process.env.USERPROFILE || process.env.HOMEDRIVE &#43; process.env.HOMEPATH || home || null;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/eslint-plugin-react/node_modules/semver/semver.js</td>
+                <td>7</td>
+                <td><pre>process.env.NODE_DEBUG &amp;&amp;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/eslint-plugin-react/node_modules/semver/semver.js</td>
+                <td>8</td>
+                <td><pre>/\bsemver\b/i.test(process.env.NODE_DEBUG)) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/eslint-plugin-react-hooks/cjs/eslint-plugin-react-hooks.development.js</td>
+                <td>13</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/eslint-plugin-react-hooks/index.js</td>
+                <td>5</td>
+                <td><pre>if (process.env.NODE_ENV === &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/express/lib/application.js</td>
+                <td>78</td>
+                <td><pre>var env = process.env.NODE_ENV || &#39;development&#39;;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/express/node_modules/debug/src/browser.js</td>
+                <td>158</td>
+                <td><pre>r = process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/express/node_modules/debug/src/node.js</td>
+                <td>61</td>
+                <td><pre>var fd = parseInt(process.env.DEBUG_FD, 10) || 2;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/express/node_modules/debug/src/node.js</td>
+                <td>143</td>
+                <td><pre>delete process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/express/node_modules/debug/src/node.js</td>
+                <td>145</td>
+                <td><pre>process.env.DEBUG = namespaces;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/express/node_modules/debug/src/node.js</td>
+                <td>157</td>
+                <td><pre>return process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/express/node_modules/debug/src/node.js</td>
+                <td>245</td>
+                <td><pre>* Enable namespaces listed in `process.env.DEBUG` initially.</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/finalhandler/index.js</td>
+                <td>81</td>
+                <td><pre>var env = opts.env || process.env.NODE_ENV || &#39;development&#39;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/finalhandler/node_modules/debug/src/browser.js</td>
+                <td>158</td>
+                <td><pre>r = process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/finalhandler/node_modules/debug/src/node.js</td>
+                <td>61</td>
+                <td><pre>var fd = parseInt(process.env.DEBUG_FD, 10) || 2;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/finalhandler/node_modules/debug/src/node.js</td>
+                <td>143</td>
+                <td><pre>delete process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/finalhandler/node_modules/debug/src/node.js</td>
+                <td>145</td>
+                <td><pre>process.env.DEBUG = namespaces;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/finalhandler/node_modules/debug/src/node.js</td>
+                <td>157</td>
+                <td><pre>return process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/finalhandler/node_modules/debug/src/node.js</td>
+                <td>245</td>
+                <td><pre>* Enable namespaces listed in `process.env.DEBUG` initially.</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/fs.realpath/old.js</td>
+                <td>28</td>
+                <td><pre>var DEBUG = process.env.NODE_DEBUG &amp;&amp; /fs/.test(process.env.NODE_DEBUG);</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/graceful-fs/graceful-fs.js</td>
+                <td>35</td>
+                <td><pre>else if (/\bgfs4\b/i.test(process.env.NODE_DEBUG || &#39;&#39;))</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/graceful-fs/graceful-fs.js</td>
+                <td>84</td>
+                <td><pre>if (/\bgfs4\b/i.test(process.env.NODE_DEBUG || &#39;&#39;)) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/graceful-fs/graceful-fs.js</td>
+                <td>97</td>
+                <td><pre>if (process.env.TEST_GRACEFUL_FS_GLOBAL_PATCH &amp;&amp; !fs.__patched) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/graceful-fs/polyfills.js</td>
+                <td>6</td>
+                <td><pre>var platform = process.env.GRACEFUL_FS_PLATFORM || process.platform</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/ignore/index.js</td>
+                <td>618</td>
+                <td><pre>process.env &amp;&amp; process.env.IGNORE_TEST_WIN32</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/ignore/legacy.js</td>
+                <td>546</td>
+                <td><pre>typeof process !== &#39;undefined&#39; &amp;&amp; (process.env &amp;&amp; process.env.IGNORE_TEST_WIN32 || process.platform === &#39;win32&#39;)) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/is-interactive/index.js</td>
+                <td>6</td>
+                <td><pre>process.env.TERM !== &#39;dumb&#39; &amp;&amp;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/is-unicode-supported/index.js</td>
+                <td>8</td>
+                <td><pre>return Boolean(process.env.CI) ||</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/is-unicode-supported/index.js</td>
+                <td>9</td>
+                <td><pre>Boolean(process.env.WT_SESSION) || // Windows Terminal</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/is-unicode-supported/index.js</td>
+                <td>10</td>
+                <td><pre>process.env.TERM_PROGRAM === &#39;vscode&#39; ||</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/is-unicode-supported/index.js</td>
+                <td>11</td>
+                <td><pre>process.env.TERM === &#39;xterm-256color&#39; ||</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/is-unicode-supported/index.js</td>
+                <td>12</td>
+                <td><pre>process.env.TERM === &#39;alacritty&#39;;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/isexe/test/basic.js</td>
+                <td>97</td>
+                <td><pre>process.env.PATHEXT = pathExt</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/isexe/windows.js</td>
+                <td>8</td>
+                <td><pre>options.pathExt : process.env.PATHEXT</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/mime/mime.js</td>
+                <td>25</td>
+                <td><pre>if (process.env.DEBUG_MIME &amp;&amp; this.types[exts[i]]) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/minimatch/dist/commonjs/index.js</td>
+                <td>76</td>
+                <td><pre>process.env.__MINIMATCH_TESTING_PLATFORM__) ||</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/minimatch/dist/esm/index.js</td>
+                <td>69</td>
+                <td><pre>process.env.__MINIMATCH_TESTING_PLATFORM__) ||</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/mkdirp/lib/path-arg.js</td>
+                <td>1</td>
+                <td><pre>const platform = process.env.__TESTING_MKDIRP_PLATFORM__ || process.platform</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/mkdirp/lib/use-native.js</td>
+                <td>3</td>
+                <td><pre>const version = process.env.__TESTING_MKDIRP_NODE_VERSION__ || process.version</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/morgan/node_modules/debug/src/browser.js</td>
+                <td>158</td>
+                <td><pre>r = process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/morgan/node_modules/debug/src/node.js</td>
+                <td>61</td>
+                <td><pre>var fd = parseInt(process.env.DEBUG_FD, 10) || 2;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/morgan/node_modules/debug/src/node.js</td>
+                <td>143</td>
+                <td><pre>delete process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/morgan/node_modules/debug/src/node.js</td>
+                <td>145</td>
+                <td><pre>process.env.DEBUG = namespaces;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/morgan/node_modules/debug/src/node.js</td>
+                <td>157</td>
+                <td><pre>return process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/morgan/node_modules/debug/src/node.js</td>
+                <td>245</td>
+                <td><pre>* Enable namespaces listed in `process.env.DEBUG` initially.</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/npm-package-arg/lib/npa.js</td>
+                <td>261</td>
+                <td><pre>if (process.env.NPM_PACKAGE_ARG_8909_STRICT !== &#39;1&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/npm-run-path/index.d.ts</td>
+                <td>66</td>
+                <td><pre>console.log(process.env.PATH);</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/postcss/lib/css-syntax-error.d.ts</td>
+                <td>227</td>
+                <td><pre>*              and `process.env.NODE_DISABLE_COLORS`.</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/postcss/lib/lazy-result.js</td>
+                <td>186</td>
+                <td><pre>if (process.env.NODE_ENV !== &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/postcss/lib/lazy-result.js</td>
+                <td>395</td>
+                <td><pre>if (process.env.NODE_ENV !== &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/postcss/lib/no-work-result.js</td>
+                <td>65</td>
+                <td><pre>if (process.env.NODE_ENV !== &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/postcss/lib/parse.js</td>
+                <td>13</td>
+                <td><pre>if (process.env.NODE_ENV !== &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/postcss/lib/postcss.js</td>
+                <td>41</td>
+                <td><pre>if (process.env.LANG &amp;&amp; process.env.LANG.startsWith(&#39;cn&#39;)) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/postcss/lib/processor.js</td>
+                <td>30</td>
+                <td><pre>if (process.env.NODE_ENV !== &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/postcss-load-config/src/index.js</td>
+                <td>56</td>
+                <td><pre>* @prop {String} env=process.env.NODE_ENV Config Enviroment, will be set to `development` by `postcss-load-config` if `process.env.NODE_ENV` is `undefined`</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/postcss-load-config/src/index.js</td>
+                <td>60</td>
+                <td><pre>env: process.env.NODE_ENV</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/postcss-load-config/src/index.js</td>
+                <td>64</td>
+                <td><pre>process.env.NODE_ENV = &#39;development&#39;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/prettier/cli.js</td>
+                <td>9934</td>
+                <td><pre>if (typeof process === &#34;object&#34; &amp;&amp; process.env &amp;&amp; process.env.NODE_DEBUG &amp;&amp; /\bsemver\b/i.test(process.env.NODE_DEBUG)) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/prettier/cli.js</td>
+                <td>11414</td>
+                <td><pre>var DEBUG = process.env.NODE_DEBUG &amp;&amp; /fs/.test(process.env.NODE_DEBUG);</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/prettier/index.js</td>
+                <td>2024</td>
+                <td><pre>var debug = typeof process === &#34;object&#34; &amp;&amp; process.env &amp;&amp; process.env.NODE_DEBUG &amp;&amp; /\bsemver\b/i.test(process.env.NODE_DEBUG) ? (...args) =&gt; console.error(&#34;SEMVER&#34;, ...args) : () =&gt; {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/prettier/index.js</td>
+                <td>5366</td>
+                <td><pre>var isSimpleWindowsTerm = process.platform === &#34;win32&#34; &amp;&amp; !(process.env.TERM || &#34;&#34;).toLowerCase().startsWith(&#34;xterm&#34;);</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/prettier/index.js</td>
+                <td>7056</td>
+                <td><pre>var isSimpleWindowsTerm = process.platform === &#34;win32&#34; &amp;&amp; !(process.env.TERM || &#34;&#34;).toLowerCase().startsWith(&#34;xterm&#34;);</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/prettier/index.js</td>
+                <td>8595</td>
+                <td><pre>if (process.env.PRETTIER_DEBUG) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/prettier/index.js</td>
+                <td>14779</td>
+                <td><pre>var home = process.env.HOME;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/prettier/index.js</td>
+                <td>14780</td>
+                <td><pre>var user = process.env.LOGNAME || process.env.USER || process.env.LNAME || process.env.USERNAME;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/prettier/index.js</td>
+                <td>14782</td>
+                <td><pre>return process.env.USERPROFILE || process.env.HOMEDRIVE &#43; process.env.HOMEPATH || home || null;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/prettier/index.js</td>
+                <td>15937</td>
+                <td><pre>if (resolve.length === 1 || process.env.PRETTIER_FALLBACK_RESOLVE) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/prettier/index.js</td>
+                <td>16294</td>
+                <td><pre>process.env.TEST_PSEUDOMAP = &#34;true&#34;;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/prettier/index.js</td>
+                <td>16295</td>
+                <td><pre>if (typeof Map === &#34;function&#34; &amp;&amp; !process.env.TEST_PSEUDOMAP) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/prettier/index.js</td>
+                <td>16633</td>
+                <td><pre>var hasSymbol = typeof Symbol === &#34;function&#34; &amp;&amp; process.env._nodeLRUCacheForceNoSymbol !== &#34;1&#34;;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/prettier/index.js</td>
+                <td>18729</td>
+                <td><pre>if (typeof process !== &#34;undefined&#34; &amp;&amp; (process.env &amp;&amp; process.env.IGNORE_TEST_WIN32 || process.platform === &#34;win32&#34;)) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/prettier/third-party.js</td>
+                <td>1968</td>
+                <td><pre>var isSimpleWindowsTerm = process.platform === &#34;win32&#34; &amp;&amp; !(process.env.TERM || &#34;&#34;).toLowerCase().startsWith(&#34;xterm&#34;);</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/prop-types/checkPropTypes.js</td>
+                <td>12</td>
+                <td><pre>if (process.env.NODE_ENV !== &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/prop-types/checkPropTypes.js</td>
+                <td>43</td>
+                <td><pre>if (process.env.NODE_ENV !== &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/prop-types/checkPropTypes.js</td>
+                <td>98</td>
+                <td><pre>if (process.env.NODE_ENV !== &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/prop-types/factoryWithTypeCheckers.js</td>
+                <td>19</td>
+                <td><pre>if (process.env.NODE_ENV !== &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/prop-types/factoryWithTypeCheckers.js</td>
+                <td>172</td>
+                <td><pre>if (process.env.NODE_ENV !== &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/prop-types/factoryWithTypeCheckers.js</td>
+                <td>190</td>
+                <td><pre>} else if (process.env.NODE_ENV !== &#39;production&#39; &amp;&amp; typeof console !== &#39;undefined&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/prop-types/factoryWithTypeCheckers.js</td>
+                <td>312</td>
+                <td><pre>if (process.env.NODE_ENV !== &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/prop-types/factoryWithTypeCheckers.js</td>
+                <td>370</td>
+                <td><pre>process.env.NODE_ENV !== &#39;production&#39; ? printWarning(&#39;Invalid argument supplied to oneOfType, expected an instance of array.&#39;) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/prop-types/index.js</td>
+                <td>8</td>
+                <td><pre>if (process.env.NODE_ENV !== &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/prop-types/prop-types.js</td>
+                <td>1116</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/prop-types/prop-types.js</td>
+                <td>1307</td>
+                <td><pre>if (process.env.NODE_ENV === &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react/cjs/react-jsx-dev-runtime.development.js</td>
+                <td>13</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react/cjs/react-jsx-runtime.development.js</td>
+                <td>13</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react/cjs/react.development.js</td>
+                <td>13</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react/cjs/react.shared-subset.development.js</td>
+                <td>13</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react/index.js</td>
+                <td>3</td>
+                <td><pre>if (process.env.NODE_ENV === &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react/jsx-dev-runtime.js</td>
+                <td>3</td>
+                <td><pre>if (process.env.NODE_ENV === &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react/jsx-runtime.js</td>
+                <td>3</td>
+                <td><pre>if (process.env.NODE_ENV === &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react/react.shared-subset.js</td>
+                <td>3</td>
+                <td><pre>if (process.env.NODE_ENV === &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-dom/cjs/react-dom-server-legacy.browser.development.js</td>
+                <td>13</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js</td>
+                <td>13</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-dom/cjs/react-dom-server.browser.development.js</td>
+                <td>13</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-dom/cjs/react-dom-server.node.development.js</td>
+                <td>13</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-dom/cjs/react-dom-test-utils.development.js</td>
+                <td>13</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-dom/cjs/react-dom.development.js</td>
+                <td>13</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-dom/client.js</td>
+                <td>4</td>
+                <td><pre>if (process.env.NODE_ENV === &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-dom/index.js</td>
+                <td>11</td>
+                <td><pre>if (process.env.NODE_ENV !== &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-dom/index.js</td>
+                <td>31</td>
+                <td><pre>if (process.env.NODE_ENV === &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-dom/profiling.js</td>
+                <td>11</td>
+                <td><pre>if (process.env.NODE_ENV !== &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-dom/profiling.js</td>
+                <td>31</td>
+                <td><pre>if (process.env.NODE_ENV === &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-dom/server.browser.js</td>
+                <td>4</td>
+                <td><pre>if (process.env.NODE_ENV === &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-dom/server.node.js</td>
+                <td>4</td>
+                <td><pre>if (process.env.NODE_ENV === &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-dom/test-utils.js</td>
+                <td>3</td>
+                <td><pre>if (process.env.NODE_ENV === &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-is/cjs/react-is.development.js</td>
+                <td>14</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-is/index.js</td>
+                <td>3</td>
+                <td><pre>if (process.env.NODE_ENV === &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-refresh/babel.js</td>
+                <td>3</td>
+                <td><pre>if (process.env.NODE_ENV === &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-refresh/cjs/react-refresh-babel.development.js</td>
+                <td>13</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-refresh/cjs/react-refresh-runtime.development.js</td>
+                <td>13</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-refresh/runtime.js</td>
+                <td>3</td>
+                <td><pre>if (process.env.NODE_ENV === &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>33</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>37</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>41</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>56</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>60</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>68</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>72</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>86</td>
+                <td><pre>!useInRouterContext() ? process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_invariant(false, // TODO: This error is probably because they somehow have 2 versions of the</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>136</td>
+                <td><pre>!useInRouterContext() ? process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_invariant(false, // TODO: This error is probably because they somehow have 2 versions of the</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>160</td>
+                <td><pre>!useInRouterContext() ? process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_invariant(false, // TODO: This error is probably because they somehow have 2 versions of the</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>201</td>
+                <td><pre>!useInRouterContext() ? process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_invariant(false, // TODO: This error is probably because they somehow have 2 versions of the</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>225</td>
+                <td><pre>process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_warning(activeRef.current, navigateEffectWarning) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>326</td>
+                <td><pre>!useInRouterContext() ? process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_invariant(false, // TODO: This error is probably because they somehow have 2 versions of the</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>340</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>369</td>
+                <td><pre>!(parentPathnameBase === &#34;/&#34; || ((_parsedLocationArg$pa = parsedLocationArg.pathname) == null ? void 0 : _parsedLocationArg$pa.startsWith(parentPathnameBase))) ? process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_invariant(false, &#34;When overriding the location using `&lt;Routes location&gt;` or `useRoutes(routes, location)`, &#34; &#43; &#34;the location pathname must begin with the portion of the URL pathname that was &#34; &#43; (&#34;matched by all parent routes. The current pathname base is \&#34;&#34; &#43; parentPathnameBase &#43; &#34;\&#34; &#34;) &#43; (&#34;but pathname \&#34;&#34; &#43; parsedLocationArg.pathname &#43; &#34;\&#34; was given in the `location` prop.&#34;)) : UNSAFE_invariant(false) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>398</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>399</td>
+                <td><pre>process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_warning(parentRoute || matches != null, &#34;No routes matched location \&#34;&#34; &#43; location.pathname &#43; location.search &#43; location.hash &#43; &#34;\&#34; &#34;) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>400</td>
+                <td><pre>process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_warning(matches == null || matches[matches.length - 1].route.element !== undefined || matches[matches.length - 1].route.Component !== undefined || matches[matches.length - 1].route.lazy !== undefined, &#34;Matched leaf route at location \&#34;&#34; &#43; location.pathname &#43; location.search &#43; location.hash &#43; &#34;\&#34; &#34; &#43; &#34;does not have an element or Component. This means it will render an &lt;Outlet /&gt; with a &#34; &#43; &#34;null value by default resulting in an \&#34;empty\&#34; page.&#34;) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>445</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>570</td>
+                <td><pre>!(errorIndex &gt;= 0) ? process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_invariant(false, &#34;Could not find a matching route for errors on route IDs: &#34; &#43; Object.keys(errors).join(&#34;,&#34;)) : UNSAFE_invariant(false) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>697</td>
+                <td><pre>!ctx ? process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_invariant(false, getDataRouterConsoleError(hookName)) : UNSAFE_invariant(false) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>702</td>
+                <td><pre>!state ? process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_invariant(false, getDataRouterConsoleError(hookName)) : UNSAFE_invariant(false) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>707</td>
+                <td><pre>!route ? process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_invariant(false, getDataRouterConsoleError(hookName)) : UNSAFE_invariant(false) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>715</td>
+                <td><pre>!thisRoute.route.id ? process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_invariant(false, hookName &#43; &#34; can only be used on routes that contain a unique \&#34;id\&#34;&#34;) : UNSAFE_invariant(false) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>908</td>
+                <td><pre>process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_warning(activeRef.current, navigateEffectWarning) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>927</td>
+                <td><pre>process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_warning(false, message) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>1011</td>
+                <td><pre>process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_warning(fallbackElement == null || !router.future.v7_partialHydration, &#34;`&lt;RouterProvider fallbackElement&gt;` is deprecated when using &#34; &#43; &#34;`v7_partialHydration`, use a `HydrateFallback` component instead&#34;) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>1131</td>
+                <td><pre>!useInRouterContext() ? process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_invariant(false, // TODO: This error is probably because they somehow have 2 versions of</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>1138</td>
+                <td><pre>process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_warning(!isStatic, &#34;&lt;Navigate&gt; must not be used on the initial render in a &lt;StaticRouter&gt;. &#34; &#43; &#34;This is a no-op, but you should modify your code so the &lt;Navigate&gt; is &#34; &#43; &#34;only ever rendered in response to some user interaction or state change.&#34;) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>1172</td>
+                <td><pre>process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_invariant(false, &#34;A &lt;Route&gt; is only ever to be used as the child of &lt;Routes&gt; element, &#34; &#43; &#34;never rendered directly. Please wrap your &lt;Route&gt; in a &lt;Routes&gt;.&#34;) : UNSAFE_invariant(false) ;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>1193</td>
+                <td><pre>!!useInRouterContext() ? process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_invariant(false, &#34;You cannot render a &lt;Router&gt; inside another &lt;Router&gt;.&#34; &#43; &#34; You should never have more than one in your app.&#34;) : UNSAFE_invariant(false) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>1232</td>
+                <td><pre>process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_warning(locationContext != null, &#34;&lt;Router basename=\&#34;&#34; &#43; basename &#43; &#34;\&#34;&gt; is not able to match the URL &#34; &#43; (&#34;\&#34;&#34; &#43; pathname &#43; search &#43; hash &#43; &#34;\&#34; because it does not start with the &#34;) &#43; &#34;basename, so the &lt;Router&gt; won&#39;t render anything.&#34;) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>1407</td>
+                <td><pre>!(element.type === Route) ? process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_invariant(false, &#34;[&#34; &#43; (typeof element.type === &#34;string&#34; ? element.type : element.type.name) &#43; &#34;] is not a &lt;Route&gt; component. All component children of &lt;Routes&gt; must be a &lt;Route&gt; or &lt;React.Fragment&gt;&#34;) : UNSAFE_invariant(false) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>1408</td>
+                <td><pre>!(!element.props.index || !element.props.children) ? process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_invariant(false, &#34;An index route cannot have child routes.&#34;) : UNSAFE_invariant(false) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>1447</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>1449</td>
+                <td><pre>process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_warning(false, &#34;You should not include both `Component` and `element` on your route - &#34; &#43; &#34;`Component` will be used.&#34;) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>1458</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>1460</td>
+                <td><pre>process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_warning(false, &#34;You should not include both `HydrateFallback` and `hydrateFallbackElement` on your route - &#34; &#43; &#34;`HydrateFallback` will be used.&#34;) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>1469</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/index.js</td>
+                <td>1471</td>
+                <td><pre>process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_warning(false, &#34;You should not include both `ErrorBoundary` and `errorElement` on your route - &#34; &#43; &#34;`ErrorBoundary` will be used.&#34;) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router/dist/main.js</td>
+                <td>15</td>
+                <td><pre>if (process.env.NODE_ENV === &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router-dom/dist/index.js</td>
+                <td>136</td>
+                <td><pre>process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_warning(false, &#34;\&#34;&#34; &#43; encType &#43; &#34;\&#34; is not a valid `encType` for `&lt;Form&gt;`/`&lt;fetcher.Form&gt;` &#34; &#43; (&#34;and will default to \&#34;&#34; &#43; defaultEncType &#43; &#34;\&#34;&#34;)) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router-dom/dist/index.js</td>
+                <td>315</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router-dom/dist/index.js</td>
+                <td>319</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router-dom/dist/index.js</td>
+                <td>547</td>
+                <td><pre>process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_warning(fallbackElement == null || !router.future.v7_partialHydration, &#34;`&lt;RouterProvider fallbackElement&gt;` is deprecated when using &#34; &#43; &#34;`v7_partialHydration`, use a `HydrateFallback` component instead&#34;) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router-dom/dist/index.js</td>
+                <td>727</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router-dom/dist/index.js</td>
+                <td>771</td>
+                <td><pre>process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_warning(false, &#34;&lt;Link to=\&#34;&#34; &#43; to &#43; &#34;\&#34;&gt; contains an invalid URL which will probably break &#34; &#43; &#34;when clicked - please update to a valid URL path.&#34;) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router-dom/dist/index.js</td>
+                <td>804</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router-dom/dist/index.js</td>
+                <td>881</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router-dom/dist/index.js</td>
+                <td>934</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router-dom/dist/index.js</td>
+                <td>952</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router-dom/dist/index.js</td>
+                <td>979</td>
+                <td><pre>!ctx ? process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_invariant(false, getDataRouterConsoleError(hookName)) : UNSAFE_invariant(false) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router-dom/dist/index.js</td>
+                <td>984</td>
+                <td><pre>!state ? process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_invariant(false, getDataRouterConsoleError(hookName)) : UNSAFE_invariant(false) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router-dom/dist/index.js</td>
+                <td>1028</td>
+                <td><pre>process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_warning(typeof URLSearchParams !== &#34;undefined&#34;, &#34;You cannot use the `useSearchParams` hook in a browser that does not &#34; &#43; &#34;support the URLSearchParams API. If you need to support Internet &#34; &#43; &#34;Explorer 11, we recommend you load a polyfill such as &#34; &#43; &#34;https://github.com/ungap/url-search-params.&#34;) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router-dom/dist/index.js</td>
+                <td>1112</td>
+                <td><pre>!routeContext ? process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_invariant(false, &#34;useFormAction must be used inside a RouteContext&#34;) : UNSAFE_invariant(false) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router-dom/dist/index.js</td>
+                <td>1169</td>
+                <td><pre>!fetcherData ? process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_invariant(false, &#34;useFetcher must be used inside a FetchersContext&#34;) : UNSAFE_invariant(false) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router-dom/dist/index.js</td>
+                <td>1170</td>
+                <td><pre>!route ? process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_invariant(false, &#34;useFetcher must be used inside a RouteContext&#34;) : UNSAFE_invariant(false) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router-dom/dist/index.js</td>
+                <td>1171</td>
+                <td><pre>!(routeId != null) ? process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_invariant(false, &#34;useFetcher can only be used on routes that contain a unique \&#34;id\&#34;&#34;) : UNSAFE_invariant(false) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router-dom/dist/index.js</td>
+                <td>1195</td>
+                <td><pre>!routeId ? process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_invariant(false, &#34;No routeId available for fetcher.load()&#34;) : UNSAFE_invariant(false) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router-dom/dist/index.js</td>
+                <td>1213</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router-dom/dist/index.js</td>
+                <td>1282</td>
+                <td><pre>process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_warning(false, &#34;Failed to save scroll positions in sessionStorage, &lt;ScrollRestoration /&gt; will not work properly (&#34; &#43; error &#43; &#34;).&#34;) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router-dom/dist/index.js</td>
+                <td>1428</td>
+                <td><pre>!(vtContext != null) ? process.env.NODE_ENV !== &#34;production&#34; ? UNSAFE_invariant(false, &#34;`useViewTransitionState` must be used within `react-router-dom`&#39;s `RouterProvider`.  &#34; &#43; &#34;Did you accidentally import `RouterProvider` from `react-router`?&#34;) : UNSAFE_invariant(false) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router-dom/dist/main.js</td>
+                <td>15</td>
+                <td><pre>if (process.env.NODE_ENV === &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router-dom/dist/server.js</td>
+                <td>72</td>
+                <td><pre>!(router$1 &amp;&amp; context) ? process.env.NODE_ENV !== &#34;production&#34; ? router.UNSAFE_invariant(false, &#34;You must provide `router` and `context` to &lt;StaticRouterProvider&gt;&#34;) : router.UNSAFE_invariant(false) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/react-router-dom/server.js</td>
+                <td>72</td>
+                <td><pre>!(router$1 &amp;&amp; context) ? process.env.NODE_ENV !== &#34;production&#34; ? router.UNSAFE_invariant(false, &#34;You must provide `router` and `context` to &lt;StaticRouterProvider&gt;&#34;) : router.UNSAFE_invariant(false) : void 0;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/readable-stream/readable.js</td>
+                <td>2</td>
+                <td><pre>if (process.env.READABLE_STREAM === &#39;disable&#39; &amp;&amp; Stream) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/resolve/lib/homedir.js</td>
+                <td>8</td>
+                <td><pre>var home = process.env.HOME;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/resolve/lib/homedir.js</td>
+                <td>9</td>
+                <td><pre>var user = process.env.LOGNAME || process.env.USER || process.env.LNAME || process.env.USERNAME;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/resolve/lib/homedir.js</td>
+                <td>12</td>
+                <td><pre>return process.env.USERPROFILE || process.env.HOMEDRIVE &#43; process.env.HOMEPATH || home || null;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/rollup/dist/es/shared/watch.js</td>
+                <td>7505</td>
+                <td><pre>if (process.env.CHOKIDAR_PRINT_FSEVENTS_REQUIRE_ERROR) console.error(error);</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/rollup/dist/es/shared/watch.js</td>
+                <td>8368</td>
+                <td><pre>const envPoll = process.env.CHOKIDAR_USEPOLLING;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/rollup/dist/es/shared/watch.js</td>
+                <td>8380</td>
+                <td><pre>const envInterval = process.env.CHOKIDAR_INTERVAL;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/rollup/dist/shared/index.js</td>
+                <td>7500</td>
+                <td><pre>if (process.env.CHOKIDAR_PRINT_FSEVENTS_REQUIRE_ERROR) console.error(error);</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/rollup/dist/shared/index.js</td>
+                <td>8363</td>
+                <td><pre>const envPoll = process.env.CHOKIDAR_USEPOLLING;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/rollup/dist/shared/index.js</td>
+                <td>8375</td>
+                <td><pre>const envInterval = process.env.CHOKIDAR_INTERVAL;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/rollup/dist/shared/loadConfigFile.js</td>
+                <td>254</td>
+                <td><pre>if (process.env.ROLLUP_FILTER_LOGS) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/rollup/dist/shared/loadConfigFile.js</td>
+                <td>255</td>
+                <td><pre>filters.push(...process.env.ROLLUP_FILTER_LOGS.split(&#39;,&#39;));</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/scheduler/cjs/scheduler-unstable_mock.development.js</td>
+                <td>13</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/scheduler/cjs/scheduler-unstable_post_task.development.js</td>
+                <td>13</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/scheduler/cjs/scheduler.development.js</td>
+                <td>13</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/scheduler/index.js</td>
+                <td>3</td>
+                <td><pre>if (process.env.NODE_ENV === &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/scheduler/unstable_mock.js</td>
+                <td>3</td>
+                <td><pre>if (process.env.NODE_ENV === &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/scheduler/unstable_post_task.js</td>
+                <td>3</td>
+                <td><pre>if (process.env.NODE_ENV === &#39;production&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/semver/internal/debug.js</td>
+                <td>4</td>
+                <td><pre>process.env.NODE_DEBUG &amp;&amp;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/semver/internal/debug.js</td>
+                <td>5</td>
+                <td><pre>/\bsemver\b/i.test(process.env.NODE_DEBUG)</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/send/node_modules/debug/src/browser.js</td>
+                <td>158</td>
+                <td><pre>r = process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/send/node_modules/debug/src/node.js</td>
+                <td>61</td>
+                <td><pre>var fd = parseInt(process.env.DEBUG_FD, 10) || 2;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/send/node_modules/debug/src/node.js</td>
+                <td>143</td>
+                <td><pre>delete process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/send/node_modules/debug/src/node.js</td>
+                <td>145</td>
+                <td><pre>process.env.DEBUG = namespaces;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/send/node_modules/debug/src/node.js</td>
+                <td>157</td>
+                <td><pre>return process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/send/node_modules/debug/src/node.js</td>
+                <td>245</td>
+                <td><pre>* Enable namespaces listed in `process.env.DEBUG` initially.</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/sucrase/dist/esm/register.js</td>
+                <td>18</td>
+                <td><pre>const sucraseOptionsEnvJSON = process.env.SUCRASE_OPTIONS;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/sucrase/dist/register.js</td>
+                <td>18</td>
+                <td><pre>const sucraseOptionsEnvJSON = process.env.SUCRASE_OPTIONS;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/lib/featureFlags.js</td>
+                <td>68</td>
+                <td><pre>if (process.env.JEST_WORKER_ID !== undefined) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/lib/lib/sharedState.js</td>
+                <td>38</td>
+                <td><pre>NODE_ENV: process.env.NODE_ENV,</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/lib/lib/sharedState.js</td>
+                <td>39</td>
+                <td><pre>DEBUG: resolveDebug(process.env.DEBUG)</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/lib/util/log.js</td>
+                <td>27</td>
+                <td><pre>if (typeof process !== &#34;undefined&#34; &amp;&amp; process.env.JEST_WORKER_ID) return;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/lib/util/parseDependency.js</td>
+                <td>30</td>
+                <td><pre>if (process.env.ROLLUP_WATCH === &#34;true&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/peers/index.js</td>
+                <td>4904</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/peers/index.js</td>
+                <td>5176</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/peers/index.js</td>
+                <td>5352</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/peers/index.js</td>
+                <td>5545</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/peers/index.js</td>
+                <td>5633</td>
+                <td><pre>if (process.env.NODE_ENV !== &#34;production&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/peers/index.js</td>
+                <td>5699</td>
+                <td><pre>if (process.env.LANG &amp;&amp; process.env.LANG.startsWith(&#34;cn&#34;)) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/peers/index.js</td>
+                <td>5798</td>
+                <td><pre>var home = process.env.HOME;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/peers/index.js</td>
+                <td>5799</td>
+                <td><pre>var user = process.env.LOGNAME || process.env.USER || process.env.LNAME || process.env.USERNAME;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/peers/index.js</td>
+                <td>5801</td>
+                <td><pre>return process.env.USERPROFILE || process.env.HOMEDRIVE &#43; process.env.HOMEPATH || home || null;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/peers/index.js</td>
+                <td>8542</td>
+                <td><pre>if (!process.env.BROWSERSLIST_DISABLE_CACHE) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/peers/index.js</td>
+                <td>8558</td>
+                <td><pre>if (!process.env.BROWSERSLIST_ROOT_PATH) return true;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/peers/index.js</td>
+                <td>8559</td>
+                <td><pre>var rootPath = path.resolve(process.env.BROWSERSLIST_ROOT_PATH);</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/peers/index.js</td>
+                <td>8581</td>
+                <td><pre>} else if (process.env.BROWSERSLIST_ENV) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/peers/index.js</td>
+                <td>8582</td>
+                <td><pre>name = process.env.BROWSERSLIST_ENV;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/peers/index.js</td>
+                <td>8583</td>
+                <td><pre>} else if (process.env.NODE_ENV) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/peers/index.js</td>
+                <td>8584</td>
+                <td><pre>name = process.env.NODE_ENV;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/peers/index.js</td>
+                <td>8667</td>
+                <td><pre>if (!ctx.dangerousExtend &amp;&amp; !process.env.BROWSERSLIST_DANGEROUS_EXTEND) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/peers/index.js</td>
+                <td>8684</td>
+                <td><pre>if (!ctx.dangerousExtend &amp;&amp; !process.env.BROWSERSLIST_DANGEROUS_EXTEND) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/peers/index.js</td>
+                <td>8697</td>
+                <td><pre>} else if (process.env.BROWSERSLIST_STATS) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/peers/index.js</td>
+                <td>8698</td>
+                <td><pre>stats = process.env.BROWSERSLIST_STATS;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/peers/index.js</td>
+                <td>8715</td>
+                <td><pre>if (process.env.BROWSERSLIST) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/peers/index.js</td>
+                <td>8716</td>
+                <td><pre>return process.env.BROWSERSLIST;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/peers/index.js</td>
+                <td>8717</td>
+                <td><pre>} else if (opts.config || process.env.BROWSERSLIST_CONFIG) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/peers/index.js</td>
+                <td>8718</td>
+                <td><pre>var file = opts.config || process.env.BROWSERSLIST_CONFIG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/peers/index.js</td>
+                <td>8844</td>
+                <td><pre>if (!process.env.BROWSERSLIST_DISABLE_CACHE) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/peers/index.js</td>
+                <td>8864</td>
+                <td><pre>if (process.env.BROWSERSLIST_IGNORE_OLD_DATA) return;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/peers/index.js</td>
+                <td>12843</td>
+                <td><pre>} else if (typeof process.env.AUTOPREFIXER_GRID !== &#34;undefined&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/peers/index.js</td>
+                <td>12844</td>
+                <td><pre>if (process.env.AUTOPREFIXER_GRID === &#34;autoplace&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/src/featureFlags.js</td>
+                <td>46</td>
+                <td><pre>if (process.env.JEST_WORKER_ID !== undefined) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/src/lib/sharedState.js</td>
+                <td>4</td>
+                <td><pre>NODE_ENV: process.env.NODE_ENV,</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/src/lib/sharedState.js</td>
+                <td>5</td>
+                <td><pre>DEBUG: resolveDebug(process.env.DEBUG),</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/src/util/log.js</td>
+                <td>6</td>
+                <td><pre>if (typeof process !== &#39;undefined&#39; &amp;&amp; process.env.JEST_WORKER_ID) return</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tailwindcss/src/util/parseDependency.js</td>
+                <td>26</td>
+                <td><pre>if (process.env.ROLLUP_WATCH === &#39;true&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tar/lib/get-write-flag.js</td>
+                <td>9</td>
+                <td><pre>const platform = process.env.__FAKE_PLATFORM__ || process.platform</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tar/lib/normalize-windows-path.js</td>
+                <td>6</td>
+                <td><pre>const platform = process.env.TESTING_TAR_FAKE_PLATFORM || process.platform</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tar/lib/path-reservations.js</td>
+                <td>14</td>
+                <td><pre>const platform = process.env.TESTING_TAR_FAKE_PLATFORM || process.platform</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tar/lib/unpack.js</td>
+                <td>49</td>
+                <td><pre>const platform = process.env.TESTING_TAR_FAKE_PLATFORM || process.platform</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/tar/lib/write-entry.js</td>
+                <td>56</td>
+                <td><pre>this.myuser = process.env.USER || &#39;&#39;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/through2/node_modules/readable-stream/readable.js</td>
+                <td>2</td>
+                <td><pre>if (process.env.READABLE_STREAM === &#39;disable&#39; &amp;&amp; Stream) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/through2/node_modules/readable-stream/writable.js</td>
+                <td>4</td>
+                <td><pre>if (process.env.READABLE_STREAM === &#39;disable&#39;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/typescript/lib/_tsc.js</td>
+                <td>4922</td>
+                <td><pre>tscWatchFile: process.env.TSC_WATCHFILE,</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/typescript/lib/_tsc.js</td>
+                <td>4923</td>
+                <td><pre>useNonPollingWatchers: !!process.env.TSC_NONPOLLING_WATCHER,</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/typescript/lib/_tsc.js</td>
+                <td>4924</td>
+                <td><pre>tscWatchDirectory: process.env.TSC_WATCHDIRECTORY,</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/typescript/lib/_tsc.js</td>
+                <td>4996</td>
+                <td><pre>debugMode: !!process.env.NODE_INSPECTOR_IPC || !!process.env.VSCODE_INSPECTOR_OPTIONS || some(process.execArgv, (arg) =&gt; /^--(?:inspect|debug)(?:-brk)?(?:=\d&#43;)?$/i.test(arg)) || !!process.recordreplay,</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/typescript/lib/_tsserver.js</td>
+                <td>315</td>
+                <td><pre>const envLogOptions = parseLoggingEnvironmentString(process.env.TSS_LOG);</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/typescript/lib/_tsserver.js</td>
+                <td>541</td>
+                <td><pre>const traceDir = commandLineTraceDir ? (0, typescript_exports.stripQuotes)(commandLineTraceDir) : process.env.TSS_TRACE;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/typescript/lib/_tsserver.js</td>
+                <td>554</td>
+                <td><pre>const basePath = process.env.LOCALAPPDATA || process.env.APPDATA || import_os.default.homedir &amp;&amp; import_os.default.homedir() || process.env.USERPROFILE || process.env.HOMEDRIVE &amp;&amp; process.env.HOMEPATH &amp;&amp; (0, typescript_exports.normalizeSlashes)(process.env.HOMEDRIVE &#43; process.env.HOMEPATH) || import_os.default.tmpdir();</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/typescript/lib/_tsserver.js</td>
+                <td>571</td>
+                <td><pre>if (process.env.XDG_CACHE_HOME) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/typescript/lib/_tsserver.js</td>
+                <td>572</td>
+                <td><pre>return process.env.XDG_CACHE_HOME;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/typescript/lib/_tsserver.js</td>
+                <td>575</td>
+                <td><pre>const homePath = import_os.default.homedir &amp;&amp; import_os.default.homedir() || process.env.HOME || (process.env.LOGNAME || process.env.USER) &amp;&amp; `/${usersDir}/${process.env.LOGNAME || process.env.USER}` || import_os.default.tmpdir();</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/typescript/lib/typescript.js</td>
+                <td>8288</td>
+                <td><pre>tscWatchFile: process.env.TSC_WATCHFILE,</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/typescript/lib/typescript.js</td>
+                <td>8289</td>
+                <td><pre>useNonPollingWatchers: !!process.env.TSC_NONPOLLING_WATCHER,</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/typescript/lib/typescript.js</td>
+                <td>8290</td>
+                <td><pre>tscWatchDirectory: process.env.TSC_WATCHDIRECTORY,</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/typescript/lib/typescript.js</td>
+                <td>8362</td>
+                <td><pre>debugMode: !!process.env.NODE_INSPECTOR_IPC || !!process.env.VSCODE_INSPECTOR_OPTIONS || some(process.execArgv, (arg) =&gt; /^--(?:inspect|debug)(?:-brk)?(?:=\d&#43;)?$/i.test(arg)) || !!process.recordreplay,</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/undici/lib/core/connect.js</td>
+                <td>21</td>
+                <td><pre>if (global.FinalizationRegistry &amp;&amp; !(process.env.NODE_V8_COVERAGE || process.env.UNDICI_NO_FG)) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/undici/lib/dispatcher/client-h1.js</td>
+                <td>64</td>
+                <td><pre>const llhttpWasmData = process.env.JEST_WORKER_ID ? require(&#39;../llhttp/llhttp-wasm.js&#39;) : undefined</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/undici/lib/dispatcher/env-http-proxy-agent.js</td>
+                <td>35</td>
+                <td><pre>const HTTP_PROXY = httpProxy ?? process.env.http_proxy ?? process.env.HTTP_PROXY</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/undici/lib/dispatcher/env-http-proxy-agent.js</td>
+                <td>42</td>
+                <td><pre>const HTTPS_PROXY = httpsProxy ?? process.env.https_proxy ?? process.env.HTTPS_PROXY</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/undici/lib/dispatcher/env-http-proxy-agent.js</td>
+                <td>156</td>
+                <td><pre>return process.env.no_proxy ?? process.env.NO_PROXY ?? &#39;&#39;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/undici/lib/mock/pending-interceptors-formatter.js</td>
+                <td>23</td>
+                <td><pre>colors: !disableColors &amp;&amp; !process.env.CI</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/undici/lib/web/fetch/dispatcher-weakref.js</td>
+                <td>38</td>
+                <td><pre>if (process.env.NODE_V8_COVERAGE &amp;&amp; process.version.startsWith(&#39;v18&#39;)) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/update-browserslist-db/index.js</td>
+                <td>21</td>
+                <td><pre>const IsHadoopExists = !!process.env.HADOOP_HOME</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/util/util.js</td>
+                <td>109</td>
+                <td><pre>if (process.env.NODE_DEBUG) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/util/util.js</td>
+                <td>110</td>
+                <td><pre>var debugEnv = process.env.NODE_DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/uvu/bin.js</td>
+                <td>22</td>
+                <td><pre>if (opts.color) process.env.FORCE_COLOR = &#39;1&#39;;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/bin/vite.js</td>
+                <td>31</td>
+                <td><pre>process.env.DEBUG = `${</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/bin/vite.js</td>
+                <td>32</td>
+                <td><pre>process.env.DEBUG ? process.env.DEBUG &#43; &#39;,&#39; : &#39;&#39;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/bin/vite.js</td>
+                <td>38</td>
+                <td><pre>process.env.VITE_DEBUG_FILTER = filter</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>4023</td>
+                <td><pre>process.env.__MINIMATCH_TESTING_PLATFORM__) ||</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>16154</td>
+                <td><pre>r = process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>16413</td>
+                <td><pre>process.env.DEBUG = namespaces;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>16417</td>
+                <td><pre>delete process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>16429</td>
+                <td><pre>return process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>16766</td>
+                <td><pre>const filter = process.env.VITE_DEBUG_FILTER;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>16767</td>
+                <td><pre>const DEBUG = process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>17653</td>
+                <td><pre>if (process.env.CI !== &#34;true&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>17659</td>
+                <td><pre>if (process.env.CI !== &#34;true&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>17696</td>
+                <td><pre>const canClearScreen = allowClearScreen &amp;&amp; process.stdout.isTTY &amp;&amp; !process.env.CI;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>17804</td>
+                <td><pre>const tty = process.stdout.isTTY &amp;&amp; !process.env.CI;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>33743</td>
+                <td><pre>* @prop {String} env=process.env.NODE_ENV Config Enviroment, will be set to `development` by `postcss-load-config` if `process.env.NODE_ENV` is `undefined`</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>33747</td>
+                <td><pre>env: process.env.NODE_ENV</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>33751</td>
+                <td><pre>process.env.NODE_ENV = &#39;development&#39;;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>34544</td>
+                <td><pre>if (process.env.DOTENV_KEY &amp;&amp; process.env.DOTENV_KEY.length &gt; 0) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>34545</td>
+                <td><pre>return process.env.DOTENV_KEY</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>34910</td>
+                <td><pre>if (parsed.NODE_ENV &amp;&amp; process.env.VITE_USER_NODE_ENV === void 0) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>34911</td>
+                <td><pre>process.env.VITE_USER_NODE_ENV = parsed.NODE_ENV;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>34913</td>
+                <td><pre>if (parsed.BROWSER &amp;&amp; process.env.BROWSER === void 0) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>34914</td>
+                <td><pre>process.env.BROWSER = parsed.BROWSER;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>34916</td>
+                <td><pre>if (parsed.BROWSER_ARGS &amp;&amp; process.env.BROWSER_ARGS === void 0) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>34917</td>
+                <td><pre>process.env.BROWSER_ARGS = parsed.BROWSER_ARGS;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>39625</td>
+                <td><pre>r = process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>39725</td>
+                <td><pre>var fd = parseInt(process.env.DEBUG_FD, 10) || 2;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>39807</td>
+                <td><pre>delete process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>39809</td>
+                <td><pre>process.env.DEBUG = namespaces;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>39821</td>
+                <td><pre>return process.env.DEBUG;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>39909</td>
+                <td><pre>* Enable namespaces listed in `process.env.DEBUG` initially.</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>40845</td>
+                <td><pre>var env = opts.env || process.env.NODE_ENV || &#39;development&#39;;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>41159</td>
+                <td><pre>var env = process.env.NODE_ENV || &#39;development&#39;;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>43316</td>
+                <td><pre>if (process.env.CHOKIDAR_PRINT_FSEVENTS_REQUIRE_ERROR) console.error(error);</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>44174</td>
+                <td><pre>const envPoll = process.env.CHOKIDAR_USEPOLLING;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>44186</td>
+                <td><pre>const envInterval = process.env.CHOKIDAR_INTERVAL;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>45168</td>
+                <td><pre>if (process.env.LAUNCH_EDITOR) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>45169</td>
+                <td><pre>return [process.env.LAUNCH_EDITOR]</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>45173</td>
+                <td><pre>return [process.env.EDITOR || &#39;code&#39;]</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>45249</td>
+                <td><pre>if (process.env.VISUAL) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>45250</td>
+                <td><pre>return [process.env.VISUAL]</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>45251</td>
+                <td><pre>} else if (process.env.EDITOR) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>45252</td>
+                <td><pre>return [process.env.EDITOR]</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>45323</td>
+                <td><pre>if (process.env.LAUNCH_EDITOR) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>47282</td>
+                <td><pre>const nodeEnv = process.env.NODE_ENV || config.mode;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>47287</td>
+                <td><pre>&#34;process.env.NODE_ENV&#34;: JSON.stringify(nodeEnv),</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>47288</td>
+                <td><pre>&#34;global.process.env.NODE_ENV&#34;: JSON.stringify(nodeEnv),</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>47289</td>
+                <td><pre>&#34;globalThis.process.env.NODE_ENV&#34;: JSON.stringify(nodeEnv)</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>47506</td>
+                <td><pre>} else if (!options?.ssr &amp;&amp; code.includes(&#34;process.env.NODE_ENV&#34;)) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>47507</td>
+                <td><pre>const nodeEnv = config.define?.[&#34;process.env.NODE_ENV&#34;] || JSON.stringify(process.env.NODE_ENV || config.mode);</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>47512</td>
+                <td><pre>&#34;process.env.NODE_ENV&#34;: nodeEnv,</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>47513</td>
+                <td><pre>&#34;global.process.env.NODE_ENV&#34;: nodeEnv,</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>47514</td>
+                <td><pre>&#34;globalThis.process.env.NODE_ENV&#34;: nodeEnv</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>48841</td>
+                <td><pre>const debugSourcemapCombineFilter = process.env.DEBUG_VITE_SOURCEMAP_COMBINE_FILTER;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>50915</td>
+                <td><pre>&#34;process.env.NODE_ENV&#34;: JSON.stringify(process.env.NODE_ENV || config.mode)</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>51210</td>
+                <td><pre>mode: process.env.NODE_ENV || config.mode,</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>53147</td>
+                <td><pre>if (process.env.__IS_WSL_TEST__) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>53320</td>
+                <td><pre>`${process.env.SYSTEMROOT}\\System32\\WindowsPowerShell\\v1.0\\powershell`;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>53526</td>
+                <td><pre>options.pathExt : process.env.PATHEXT;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>53672</td>
+                <td><pre>process.env.OSTYPE === &#39;cygwin&#39; ||</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>53673</td>
+                <td><pre>process.env.OSTYPE === &#39;msys&#39;;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>53692</td>
+                <td><pre>...(opt.path || process.env.PATH ||</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>53697</td>
+                <td><pre>? opt.pathExt || process.env.PATHEXT || &#39;.EXE;.CMD;.BAT;.COM&#39;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>54146</td>
+                <td><pre>const browser = process.env.BROWSER || &#34;&#34;;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>54150</td>
+                <td><pre>const browserArgs = process.env.BROWSER_ARGS ? process.env.BROWSER_ARGS.split(&#34; &#34;) : [];</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>54236</td>
+                <td><pre>if (!server.httpServer || !process.stdin.isTTY || process.env.CI) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>54652</td>
+                <td><pre>if (!process.env.WS_NO_BUFFER_UTIL) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>55380</td>
+                <td><pre>} /* istanbul ignore else  */ else if (!process.env.WS_NO_UTF_8_VALIDATE) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>63082</td>
+                <td><pre>if (process.env.DEBUG) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>65570</td>
+                <td><pre>const tty = process.stdout.isTTY &amp;&amp; !process.env.CI;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>66127</td>
+                <td><pre>const isNodeEnvSet = !!process.env.NODE_ENV;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>66130</td>
+                <td><pre>process.env.NODE_ENV = defaultNodeEnv;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>66211</td>
+                <td><pre>const userNodeEnv = process.env.VITE_USER_NODE_ENV;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>66214</td>
+                <td><pre>process.env.NODE_ENV = &#34;development&#34;;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>66217</td>
+                <td><pre>`NODE_ENV=${userNodeEnv} is not supported in the .env file. Only NODE_ENV=development is supported to create a development build of your project. If you need to set process.env.NODE_ENV, you can set it in the Vite config instead.`</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js</td>
+                <td>66221</td>
+                <td><pre>const isProduction = process.env.NODE_ENV === &#34;production&#34;;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/node_modules/esbuild/install.js</td>
+                <td>29</td>
+                <td><pre>var ESBUILD_BINARY_PATH = process.env.ESBUILD_BINARY_PATH || ESBUILD_BINARY_PATH;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/node_modules/esbuild/lib/main.js</td>
+                <td>1599</td>
+                <td><pre>var ESBUILD_BINARY_PATH = process.env.ESBUILD_BINARY_PATH || ESBUILD_BINARY_PATH;</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/node_modules/esbuild/lib/main.js</td>
+                <td>1791</td>
+                <td><pre>if (process.env.ESBUILD_WORKER_THREADS !== &#34;0&#34;) {</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/vite/node_modules/esbuild/lib/main.js</td>
+                <td>2087</td>
+                <td><pre>maxBuffer: &#43;process.env.ESBUILD_MAX_BUFFER || 16 * 1024 * 1024</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/which/lib/index.js</td>
+                <td>19</td>
+                <td><pre>path: optPath = process.env.PATH,</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/which/lib/index.js</td>
+                <td>20</td>
+                <td><pre>pathExt: optPathExt = process.env.PATHEXT,</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/yaml/dist/compose/composer.js</td>
+                <td>137</td>
+                <td><pre>if (node_process.env.LOG_STREAM)</pre></td>
+            </tr>
+            
+            <tr>
+                <td>../csterms/frontend/node_modules/yaml/dist/parse/parser.js</td>
+                <td>170</td>
+                <td><pre>if (node_process.env.LOG_TOKENS)</pre></td>
+            </tr>
+            
+        </tbody>
+    </table>
+</body>
+</html>
